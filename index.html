@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -80,7 +79,7 @@
         }
         
         .logo {
-            width: 320px; /* تكبير 4 أضعاف من 80px إلى 320px */
+            width: 320px;
             height: 80px;
             display: flex;
             align-items: center;
@@ -92,7 +91,7 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-            filter: brightness(0) invert(1); /* يجعل الشعار أبيض */
+            filter: brightness(0) invert(1);
         }
         
         .title-section h1 {
@@ -454,6 +453,57 @@
             font-size: 0.95rem;
         }
         
+        /* زر التوقيع على الإطلاع */
+        .signature-section {
+            text-align: center;
+            margin: 40px 0 20px;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: var(--radius);
+            border: 2px dashed var(--primary);
+        }
+        
+        .signature-title {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .signature-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--gradient);
+            color: white;
+            padding: 16px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .signature-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+            background: var(--gradient-light);
+        }
+        
+        .signature-btn i {
+            font-size: 1.3rem;
+        }
+        
+        .signature-note {
+            margin-top: 15px;
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
         /* التذييل */
         footer {
             background: var(--gradient);
@@ -674,6 +724,20 @@
                 font-size: 0.85rem;
             }
             
+            .signature-section {
+                padding: 20px;
+                margin: 30px 0 15px;
+            }
+            
+            .signature-title {
+                font-size: 1.2rem;
+            }
+            
+            .signature-btn {
+                padding: 14px 25px;
+                font-size: 1rem;
+            }
+            
             .floating-icon {
                 display: none;
             }
@@ -713,6 +777,11 @@
             
             .title-section h1 {
                 font-size: 1.1rem;
+            }
+            
+            .signature-btn {
+                padding: 12px 20px;
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -1022,6 +1091,17 @@
                     <div class="content-section">
                         <h3><i class="fas fa-flag-checkered"></i> ختام الرحلة</h3>
                         <p>نشكر لكم اهتمامكم بالاطلاع على دليل التدريب الذاتي، ونتمنى لكم تجربة تدريبية ناجحة ومثمرة.</p>
+                    </div>
+
+                    <!-- قسم التوقيع على الإطلاع -->
+                    <div class="signature-section">
+                        <h3 class="signature-title">📝 التوقيع على الإطلاع</h3>
+                        <p>بعد الاطلاع على الدليل الإرشادي، يرجى الضغط على الزر أدناه للتوقيع على الإطلاع:</p>
+                        <a href="https://forms.office.com/r/zh5nWtQG6W?origin=lprLink" target="_blank" class="signature-btn">
+                            <i class="fas fa-signature"></i>
+                            التوقيع على الإطلاع
+                        </a>
+                        <p class="signature-note">سيتم تحويلك إلى نموذج التوقيع الإلكتروني</p>
                     </div>
                     
                     <div class="page-navigation">
